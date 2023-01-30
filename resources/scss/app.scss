@@ -1,1 +1,100 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
+
+#header {
+    width: 100%;
+
+    .thin_blue {
+        width: 100%;
+        background-color: royalblue;
+        height: 30px;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            cursor: pointer;
+            padding: 0 10px;
+            font-size: 10px;
+        }
+    }
+
+    .nav_bar {
+        max-height: 70px;
+        margin-top: 5px;
+
+        .logo_img {
+            flex-basis: 5%;
+
+            img {
+                height: 50px;
+                width: 50px;
+            }
+        }
+
+        .nav_bar_links {
+            flex-basis: 60%;
+            list-style: none;
+
+            li {
+                height: 70px;
+
+                a {
+                    text-decoration: none;
+                    color: #000;
+
+                    span {
+                        font-size: 10px;
+                    }
+                }
+
+            }
+
+            .selected {
+                border-bottom: 5px solid royalblue;
+            }
+
+
+        }
+
+        .search_form {
+            flex-basis: 20%;
+            padding: 10px;
+            margin-left: 5%;
+
+            input {
+                border: 0px solid;
+                border-radius: 0;
+                border-bottom: 2px solid royalblue;
+            }
+
+            .search_btn {
+                height: 40px;
+                border-radius: 0;
+            }
+
+            .search_btn:hover {
+                border: 1px solid gray;
+                border-radius: 50%;
+                background-color: lightgrey;
+            }
+        }
+    }
+
+    .hero {
+        height: 400px;
+        background-image: url('../imgs/jumbotron.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+}
