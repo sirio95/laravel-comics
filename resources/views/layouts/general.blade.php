@@ -9,6 +9,8 @@
 </head>
 <body>
     @include('pages/header');
-    @include('pages/cards')
+    @include('pages/cards');
+    @include('pages/ads');
+    @include('pages/footer')
 </body>
 </html>

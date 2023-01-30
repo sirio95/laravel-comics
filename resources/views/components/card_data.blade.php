@@ -218,13 +218,13 @@ $cards = [
 ?>
 
 <div class="row m-2">
-    <div class="d-flex justify-content-around flex-wrap">
+    <div class="d-flex justify-content-around flex-wrap card_container">
         <?php
         foreach ($cards as $card) {
             $img= $card["thumb"];
             $serie= $card["series"];
 
-            echo "<div class='col-2 m-1'><img src='" . $img . "'> <div class= 'text-uppercase'>" . $serie . "</div></div>";
+            echo "<div class='col-1 m-1 card'><img src='" . $img . "' class='card_img'> <div class= 'text-uppercase'>" . $serie . "</div></div>";
         };
         ?>
     </div>

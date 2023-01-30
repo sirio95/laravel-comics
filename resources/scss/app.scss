@@ -47,6 +47,7 @@ body {
 
             li {
                 height: 70px;
+                line-height: 400%;
 
                 a {
                     text-decoration: none;
@@ -96,5 +97,52 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
 
+    }
+}
+
+#card {
+    width: 100%;
+    background-color: #000;
+    padding: 20px 0;
+
+    .card_container {
+        width: 100%;
+    }
+
+    .card {
+        min-width: calc((100% / 6) - 10px);
+        background-color: #000;
+
+        .card_img {
+            max-width: 100%;
+        }
+
+        div {
+            font-size: 12px;
+            color: #fff;
+        }
+    }
+}
+
+#ads {
+    background-color: royalblue;
+
+    li {
+        list-style: none;
+        max-width: calc((100% / 5) - 60px);
+        padding: 10px 0;
+
+        img {
+            height: 50px;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+        }
     }
 }
