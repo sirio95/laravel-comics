@@ -40,3 +40,53 @@ $card_one= [
     ]
 ?>
 
+<section id="comic_one">
+    <div class="comic_one_img">
+        <img src="<?php echo $card_one['thumb']?>" alt="comic one">
+    </div>
+    <div class="row">
+        <div class="col-8">
+            <h2><?php echo $card_one['title'] ?></h2>
+            <div class="green_stripe d-flex">
+                <div class="d-flex justify-content-space-between">
+                    <div class="text-capitalize price_col">u.s. price: <span><?= echo $card_one['price']?></span></div>
+                    <div class="text-uppercase price_col">available</div>
+                </div>
+                <div>check availability <span><a href="#">&#9660;</a></span></div>
+            </div>
+            <div class="text"><?= echo $card_one['description'] ?></div>
+        </div>
+        <div class="col-4">
+            <h3 class='text-uppercase'>advertisement</h3>
+            <img src="{{ Vite::asset('resources/imgs/adv.jpg') }}" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <h2 class="text-capitalize">talent</h2>
+            <div class="d-flex justify-content-between">
+                <div>Art by:</div>
+                <div class="authors"><?= echo $card_one['artists'] ?></div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div>Written by:</div>
+                <div class="authors"><?= echo $card_one['writers'] ?></div>
+            </div>
+        </div>
+        <div class="col-6">
+            <h2 class="text-capitalize">specs</h2>
+            <div class="d-flex justify-content-between">
+                <div class="text-capitalize">series:</div>
+                <div><a href="#" class='text-uppercase'> <?= echo $card_one['series'] ?> </a></div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="text-capitalize">u.s. price:</div>
+                <div class="price"><?= echo $card_one['price'] ?></div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="text-capitalize"> on sale date: </div>
+                <div class="date"> <?= echo $card_one['sale_date'] ?></div>
+            </div>
+        </div>
+    </div>
+</section>

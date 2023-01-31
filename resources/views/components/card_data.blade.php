@@ -223,8 +223,9 @@ $cards = [
         foreach ($cards as $card) {
             $img= $card["thumb"];
             $serie= $card["series"];
+            $href= strtolower($serie);
 
-            echo "<div class='col-1 m-1 card'><img src='" . $img . "' class='card_img'> <div class= 'text-uppercase'>" . $serie . "</div></div>";
+            echo "<div class='col-1 m-1 card'><a href='" . $href . "'><img src='" . $img . "' class='card_img'></a> <div class= 'text-uppercase'>" . $serie . "</div></div>";
         };
         ?>
     </div>

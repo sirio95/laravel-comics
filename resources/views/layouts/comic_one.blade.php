@@ -9,7 +9,7 @@
 </head>
 <body>
     @include('components/header');
-    @include('comic_one_main.blade.php');
+    @include('components/comic_one_main');
     @include('components/ads');
     @include('components/footer')
 </body>
